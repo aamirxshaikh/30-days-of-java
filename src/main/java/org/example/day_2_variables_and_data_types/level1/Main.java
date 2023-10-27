@@ -1,6 +1,6 @@
 package org.example.day_2_variables_and_data_types.level1;
 
-public class Level1 {
+public class Main {
   public static void main(String[] args) {
 //    Level: Beginner
 //    1. Create a variable named name of type String and assign your name to it. Print the value of the name variable to the console.
