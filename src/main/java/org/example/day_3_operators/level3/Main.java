@@ -2,60 +2,53 @@ package org.example.day_3_operators.level3;
 
 public class Main {
   public static void main(String[] args) {
-//    Level: Intermediate
+//    Level: Advanced
 
-//    1. Create a variable count of type int and assign a value to it. Use the increment and decrement operators to perform the following operations and print the results:
+//    1. Create two variables isSunny and isRainy of type boolean and assign values to them. Perform the following logical operations and print the results:
 
-    int count = 10;
+    boolean isSunny = true;
+    boolean isRainy = false;
 
-//    a) Increment the value of count by 1 and assign it to a new variable incrementedCount.
+//    a) Logical AND operation between isSunny and isRainy.
 
-    int incrementedCount = count + 1;
+    System.out.println("and : " + (isSunny && isRainy));
 
-//    b) Decrement the value of count by 1 and assign it to a new variable decrementedCount.
+//    b) Logical OR operation between isSunny and isRainy.
 
-    int decrementedCount = count - 1;
+    System.out.println("or : " + (isSunny || isRainy));
 
-//    c) Print the value of count, incrementedCount, and decrementedCount to the console.
+//    c) Logical NOT operation on isSunny.
 
-    System.out.println("Count : " + count);
-    System.out.println("incrementedCount : " + incrementedCount);
-    System.out.println("decrementedCount : " + decrementedCount);
+    System.out.println("not : " + (!isSunny));
 
-//    2. Create two variables a and b of type double and assign values to them. Perform the following operations and print the results:
+//    2. Create a variable number of type int and assign a value to it. Write a program that checks if the number is positive and assigns the result to a variable named isPositive.
 
-    double a = 10;
-    double b = 10;
+    int var = 5;
+    boolean isPositive = false;
 
-//    a) Multiply the value of a by 2 and assign it to b.
+    if (var > 0) {
+      isPositive = true;
+    } else {
+      isPositive = false;
+    }
 
-    b = a * 2;
+//    a) Print the value of the isPositive variable to the console.
 
-//    b) Divide the value of b by 2 and assign it to a.
+    System.out.println("Is positive : " + isPositive);
 
-    a = b / 2;
+//    3. Create a variable age of type int and assign a value to it. Write a program that checks if the person is eligible to vote (age is 18 or above) and assigns the result to a variable named isEligibleToVote.
 
-//    c) Print the value of a and b to the console.
+    int age = 23;
+    boolean isEligibleToVote;
 
-    System.out.println("a : " + a);
-    System.out.println("b : " + b);
+    if (age >= 18) {
+      isEligibleToVote = true;
+    } else {
+      isEligibleToVote = false;
+    }
 
-//    3. Create a variable percentage of type double and assign a value to it. Use the compound assignment operator to perform the following operations and print the results:
+//    a) Print the value of the isEligibleToVote variable to the console.
 
-    double percentage = 90;
-
-//    a) Increase the value of percentage by 10%.
-
-    percentage += percentage * 0.1;
-    System.out.println("Percentage increase by 10 % : " + percentage);
-
-//    b) Decrease the value of percentage by 5%.
-
-    percentage -= percentage * (0.1 / 2);
-    System.out.println("Percentage decrease by 5 % : " + percentage);
-
-//    c) Print the updated value of percentage to the console.
-
-    System.out.println(percentage);
+    System.out.println("isEligibleToVote : " + isEligibleToVote);
   }
 }
