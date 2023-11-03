@@ -1,6 +1,6 @@
 package org.example.day_2_variables_and_data_types.level2;
 
-public class Level2 {
+public class Main {
   public static void main(String[] args) {
 //    Level: Intermediate
 
