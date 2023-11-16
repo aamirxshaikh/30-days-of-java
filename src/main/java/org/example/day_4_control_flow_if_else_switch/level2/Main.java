@@ -1,5 +1,6 @@
 package org.example.day_4_control_flow_if_else_switch.level2;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -35,6 +36,32 @@ public class Main {
       System.out.println("Not a palindrome");
     }
 
-//    3. Write a program that generates a random number between 1 and 100. Allow the user to make guesses and provide feedback (higher or lower) until they guess the correct number. Print the number of attempts to the console.
+//    3. Write a program that generates a random number between 1 and 100.
+//    Allow the user to make guesses and provide feedback (higher or lower) until they guess the correct number.
+//    Print the number of attempts to the console.
+
+    Random rand = new Random();
+    int numberToGuess = rand.nextInt(100) + 1;
+    int numberOfTries = 0;
+    int guess;
+    boolean win = false;
+
+    while (!win) {
+      System.out.println("Guess a number between 1 and 100:");
+      guess = sc.nextInt();
+      numberOfTries++;
+
+      if (guess == numberToGuess) {
+        win = true;
+      } else if (guess < numberToGuess) {
+        System.out.println("Your guess is too low");
+      } else {
+        System.out.println("Your guess is too high");
+      }
+    }
+
+    System.out.println("You win!");
+    System.out.println("The number was " + numberToGuess);
+    System.out.println("It took you " + numberOfTries + " tries");
   }
 }
